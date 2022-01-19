@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>gitlab-更新升级 | smalljune</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="更新升级网站技术日新月异，更新升级是维护工作之一，长时间不升级的程序，就如长时间不维护的建筑物一样，会加速老化、功能逐渐缺失直至无法使用。 这里注意更新与升级这两词的差异（延伸阅读），例如：  操作系统打个补丁常称之为更新，Ubuntu 20.04 变更为 Ubuntu 21.04，称之为升级 MySQL5.6.25–&gt;MySQL5.6.30 常称之为更新，MySQL5.6-&gt;MySQ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gitlab-更新升级">
+<meta property="og:url" content="shttps://smalljune.github.io/2022/01/19/2022-01-19-gitlab-更新升级/index.html">
+<meta property="og:site_name" content="smalljune">
+<meta property="og:description" content="更新升级网站技术日新月异，更新升级是维护工作之一，长时间不升级的程序，就如长时间不维护的建筑物一样，会加速老化、功能逐渐缺失直至无法使用。 这里注意更新与升级这两词的差异（延伸阅读），例如：  操作系统打个补丁常称之为更新，Ubuntu 20.04 变更为 Ubuntu 21.04，称之为升级 MySQL5.6.25–&gt;MySQL5.6.30 常称之为更新，MySQL5.6-&gt;MySQ">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-01-19T11:17:04.000Z">
+<meta property="article:modified_time" content="2022-01-19T03:19:52.272Z">
+<meta property="article:author" content="hfzp">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="smalljune" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">smalljune</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="shttps://smalljune.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2022-01-19-gitlab-更新升级" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/01/19/2022-01-19-gitlab-%E6%9B%B4%E6%96%B0%E5%8D%87%E7%BA%A7/" class="article-date">
+  <time datetime="2022-01-19T11:17:04.000Z" itemprop="datePublished">2022-01-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      gitlab-更新升级
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="更新升级"><a href="#更新升级" class="headerlink" title="更新升级"></a>更新升级</h1><p>网站技术日新月异，<strong>更新升级</strong>是维护工作之一，长时间不升级的程序，就如长时间不维护的建筑物一样，会加速老化、功能逐渐缺失直至无法使用。</p>
+<p>这里注意更新与升级这两词的差异（<a target="_blank" rel="noopener" href="https://support.websoft9.com/docs/faq/zh/tech-upgrade.html#%E6%9B%B4%E6%96%B0-vs-%E5%8D%87%E7%BA%A7">延伸阅读</a>），例如：</p>
+<ul>
+<li>操作系统打个补丁常称之为<strong>更新</strong>，Ubuntu 20.04 变更为 Ubuntu 21.04，称之为<strong>升级</strong></li>
+<li>MySQL5.6.25–&gt;MySQL5.6.30 常称之为<strong>更新</strong>，MySQL5.6-&gt;MySQL5.7 称之为<strong>升级</strong></li>
+</ul>
+<p>GitLab 完整的更新升级包括：系统级更新（操作系统和运行环境）和 GitLab 程序升级两种类型</p>
+<h2 id="系统级更新"><a href="#系统级更新" class="headerlink" title="系统级更新"></a>系统级更新</h2><p>运行一条更新命令，即可完成系统级更新：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">For Ubuntu</span></span><br><span class="line">apt update &amp;&amp; apt upgrade -y</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">For Centos&amp;Redhat</span></span><br><span class="line">yum update -y</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>本部署包已预配置一个用于自动更新的计划任务。如果希望去掉自动更新，请删除对应的Cron</p>
+</blockquote>
+<h2 id="GitLab升级"><a href="#GitLab升级" class="headerlink" title="GitLab升级"></a>GitLab升级</h2><p>GitLab 是一个企业级软件，它所采用了大量的第三方开源组件，它的升级是一个系统化工程。</p>
+<p>所幸，GitLab 官方提供了一个稳妥可靠的 <strong>逐级</strong> <a target="_blank" rel="noopener" href="https://docs.gitlab.com/omnibus/update/README.html#updating-using-the-official-repositories">升级方案</a> 以弥补由于当前版本与最新版本之间的跨度太大儿无法升级的问题。</p>
+<p>下面以 Gitlab 13.0.14 升级至 GitLab 14.1.6 为例，介绍详细的升级方案：</p>
+<ol>
+<li><p>查询官方<a target="_blank" rel="noopener" href="https://docs.gitlab.com/ee/update/index.html#upgrade-paths">升级路径</a>文档，确认升级路径</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">13.0.14 -&gt; 13.1.11 -&gt; 13.8.8 -&gt; 13.12.10 -&gt; 13.12.12 -&gt; 14.0.11 -&gt; 14.1.6</span><br></pre></td></tr></table></figure></li>
+<li><p>可选步骤：检索当前升级库是否提供上述路径的各种版本（ce 可替换成 ee）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Ubuntu/Debian</span><br><span class="line">sudo apt-cache madison gitlab-ce</span><br><span class="line"></span><br><span class="line"># RHEL/CentOS 6 and 7</span><br><span class="line">yum --showduplicates list gitlab-ce</span><br><span class="line"></span><br><span class="line"># RHEL/CentOS 8</span><br><span class="line">dnf --showduplicates list gitlab-ce</span><br></pre></td></tr></table></figure></li>
+<li><p>根据升级路径，一级一级逐渐向上升</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Ubuntu/Debian</span><br><span class="line">sudo apt install gitlab-ce-&lt;version&gt;</span><br><span class="line"></span><br><span class="line"># RHEL/CentOS 6 and 7</span><br><span class="line">yum install gitlab-ce-&lt;version&gt;</span><br><span class="line"></span><br><span class="line"># RHEL/CentOS 8</span><br><span class="line">dnf install gitlab-ce-&lt;version&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<blockquote>
+<p>如果不填写版本号，例如：yum install gitlab-ce，即表明升级到最新版本。</p>
+</blockquote>
+<h2 id="CE升级到EE"><a href="#CE升级到EE" class="headerlink" title="CE升级到EE"></a>CE升级到EE</h2><p>GitLab Community Edition (CE) 升级到同版本的 GitLab Enterprise Edition 的操作步骤如下：</p>
+<ol>
+<li>获取当前CE的版本号<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># For Debian/Ubuntu</span><br><span class="line">sudo apt-cache policy gitlab-ce | grep Installed</span><br><span class="line"></span><br><span class="line"># For CentOS/RHEL</span><br><span class="line">sudo rpm -q gitlab-ce</span><br></pre></td></tr></table></figure></li>
+<li>匹配EE版本号。例如获取的CE版本号为 <em>8.6.7-ce.0</em>，那么应该升级的EE版本号为：<em>8.6.7-ee.0</em></li>
+<li>Add the gitlab-ee Apt or Yum repository<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># For Debian/Ubuntu</span><br><span class="line">curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash</span><br><span class="line"></span><br><span class="line"># For CentOS/RHEL</span><br><span class="line">curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash</span><br></pre></td></tr></table></figure></li>
+<li>安装 gitlab-ee 版本（同时系统自动卸载ce版）<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">........................................</span><br><span class="line"># For Debian/Ubuntu</span><br><span class="line">........................................</span><br><span class="line">## Make sure the repositories are up-to-date</span><br><span class="line">sudo apt-get update</span><br><span class="line"></span><br><span class="line">## Install the package using the version you wrote down from step 1</span><br><span class="line">sudo apt-get install gitlab-ee=8.6.7-ee.0</span><br><span class="line"></span><br><span class="line">## Reconfigure GitLab</span><br><span class="line">sudo gitlab-ctl reconfigure</span><br><span class="line"></span><br><span class="line">........................................</span><br><span class="line"># For CentOS/RHEL</span><br><span class="line">........................................</span><br><span class="line">## Install the package using the version you wrote down from step 1</span><br><span class="line">sudo yum install gitlab-ee-8.6.7-ee.0.el7.x86_64</span><br><span class="line"></span><br><span class="line">## Reconfigure GitLab</span><br><span class="line">sudo gitlab-ctl reconfigure</span><br></pre></td></tr></table></figure></li>
+<li>Go to the GitLab admin panel of your server (/admin/license/new) and upload your license file.</li>
+<li>After you confirm that GitLab is working as expected, you may remove the old Community Edition repository:<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># For Debian/Ubuntu</span><br><span class="line">sudo rm /etc/apt/sources.list.d/gitlab_gitlab-ce.list</span><br><span class="line"></span><br><span class="line"># For CentOS/RHEL</span><br><span class="line">sudo rm /etc/yum.repos.d/gitlab_gitlab-ce.repo</span><br></pre></td></tr></table></figure>
+以上操作更详细说明请参考官方文档：<a target="_blank" rel="noopener" href="https://docs.gitlab.com/omnibus/update/README.html#updating-community-edition-to-enterprise-edition">Updating Community Edition to Enterprise Edition</a></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="shttps://smalljune.github.io/2022/01/19/2022-01-19-gitlab-更新升级/" data-id="ckykz94hj0000t1ri2c6y3wju" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/01/18/2022-01-18-%E8%BF%90%E7%BB%B4%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">运维知识体系</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">一月 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/01/19/2022-01-19-gitlab-%E6%9B%B4%E6%96%B0%E5%8D%87%E7%BA%A7/">gitlab-更新升级</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/18/2022-01-18-%E8%BF%90%E7%BB%B4%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/">运维知识体系</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/17/2022-01-17-yunweigongju/">运维工具集</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/17/hello-world/">Hexo 使用教程</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2022 hfzp<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
