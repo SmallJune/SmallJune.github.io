@@ -68,7 +68,7 @@ mkfs.xfs /dev/centos/home
 
 ### 挂载
 ```
-mount /dev/mapper/centos-home`
+mount /dev/mapper/centos-home
 
 ```
 
